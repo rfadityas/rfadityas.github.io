@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JarFajar</title>
+</head>
+<body>
+    <h3 class="text1">Hover me please :)</h3>
+    <h3 class="text2">Hi, How's your day? <span> Hope your day was good :)</span></h3>
+    <script>
+        var text1 = document.querySelector('.text1');
+        var text2 = document.querySelector('.text2');
+        text1.addEventListener('mouseover', function() {
+            text2.style.display = 'block';
+            text1.style.display = 'none';
+        });
+        text2.addEventListener('mouseout', function() {
+            text1.style.display = 'block';
+            text2.style.display = 'none';
+        });
+      </script>
+</body>
+</html>
